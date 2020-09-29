@@ -1099,6 +1099,15 @@
                         jcr:mixinTypes="[cq:ReplicationStatus]"
                         jcr:primaryType="nt:unstructured"/>
                 </policy_1570140199406>
+                <policy_107815958386420
+                    jcr:lastModified="{Date}2020-09-29T14:57:16.165-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND API"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="wknd.site">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_107815958386420>
             </page>
             <xfpage jcr:primaryType="nt:unstructured">
                 <policy_1572461714642
