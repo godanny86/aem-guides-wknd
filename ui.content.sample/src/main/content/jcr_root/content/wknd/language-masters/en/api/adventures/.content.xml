@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-09-15T10:23:12.888-07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/wknd/settings/wcm/templates/adventures-api"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Adventures"
+        sling:resourceType="wknd/components/page">
+        <root
+            jcr:lastModified="{Date}2020-09-14T14:30:30.432-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wknd/components/container">
+            <contentfragmentlist
+                jcr:lastModified="{Date}2020-09-14T15:29:44.731-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/contentfragmentlist"
+                modelPath="/conf/wknd/settings/dam/cfm/models/adventure"
+                orderBy="jcr:created"
+                parentPath="/content/dam/wknd/en/adventures"
+                sortOrder="asc"/>
+            <image
+                jcr:lastModified="{Date}2020-09-14T15:31:04.510-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/image"
+                fileReference="/content/dam/wknd/en/activities/hiking/alpinists-himalayas.jpg"/>
+            <text
+                jcr:lastModified="{Date}2020-09-15T10:23:12.885-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/text"
+                text="&lt;p>Experience the world with us&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+        </root>
+        <cq:BlueprintSyncConfig
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/pushonmodify]"
+            jcr:primaryType="cq:BlueprintSyncConfig"/>
+    </jcr:content>
+</jcr:root>

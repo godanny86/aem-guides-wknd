@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    allowedpaths="[/content/wknd/us/en/api/.*]"
+    alloworigin="[http://localhost:3000,http://localhost:4200,http://localhost:8080]"
+    alloworiginregexp="[\0]"
+    exposedheaders="[\0]"
+    maxage="{Long}1800"
+    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,Access-Control-Request-Method,Access-Control-Request-Headers,Access-Control-Allow-Origin]"
+    supportedmethods="[GET,HEAD,POST]"
+    supportscredentials="{Boolean}true"/>
