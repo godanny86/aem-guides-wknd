@@ -2,10 +2,10 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2020-09-14T15:03:31.739-07:00"
+        cq:lastModified="{Date}2020-09-29T00:13:04.861-07:00"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/wknd/settings/wcm/template-types/empty-page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Adventures API"
+        jcr:title="API Page Template"
         status="enabled"/>
 </jcr:root>

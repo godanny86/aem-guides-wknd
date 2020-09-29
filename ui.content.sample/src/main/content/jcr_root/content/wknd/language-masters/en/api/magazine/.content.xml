@@ -2,12 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:allowedTemplates="/conf/wknd/settings/wcm/templates/api-page-template"
-        cq:lastModified="{Date}2020-09-29T00:20:03.590-07:00"
+        cq:lastModified="{Date}2020-09-29T00:17:07.634-07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/api-page-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="API"
+        jcr:title="Magazine"
         sling:resourceType="wknd/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -29,19 +28,22 @@
             <image
                 jcr:created="{Date}2020-09-29T00:08:01.838-07:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2020-09-29T00:08:09.093-07:00"
+                jcr:lastModified="{Date}2020-09-29T00:16:39.384-07:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wknd/components/image"/>
+                sling:resourceType="wknd/components/image"
+                fileReference="/content/dam/wknd/en/magazine/western-australia/adobestock_156407519.jpeg"/>
             <contentfragmentlist
                 jcr:created="{Date}2020-09-29T00:08:16.698-07:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2020-09-29T00:08:18.924-07:00"
+                jcr:lastModified="{Date}2020-09-29T00:17:07.629-07:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wknd/components/contentfragmentlist"/>
+                sling:resourceType="wknd/components/contentfragmentlist"
+                modelPath="/conf/wknd/settings/dam/cfm/models/article"
+                orderBy="jcr:created"
+                parentPath="/content/dam/wknd/en/magazine"
+                sortOrder="desc"/>
         </root>
     </jcr:content>
-    <adventures/>
-    <magazine/>
 </jcr:root>
