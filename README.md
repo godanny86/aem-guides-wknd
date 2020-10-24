@@ -4,12 +4,8 @@ You are on the Tutorial branch for the WKND Site. This branch contains chapter s
 
 ```
 | 02-component-basics
-    |-- cloud
-        |-- start
-        |-- solution
-    |-- classic
-        |-- start
-        |-- solution
+    |-- start
+    |-- solution
 | 03-pages-templates
     |-- cloud
         |-- start
@@ -23,7 +19,17 @@ You are on the Tutorial branch for the WKND Site. This branch contains chapter s
 | 07-unit-testing
 ```
 
-> By design the **start** and **solution** branches will reset any content and configurations on the target AEM environment. This is not standard for a real-world implementation. Review the `ui.content/filter.xml` file and the various [modes](https://jackrabbit.apache.org/filevault/importmode.html#Modes) that can be set.
+## Building for AEM 6.5/6.4
+
+The projects has been designed for **AEM as a Cloud Service**. The project is also backward compatible with AEM **6.4.8** and **6.5.5** by adding the `classic` profile when executing a build, i.e:
+
+    mvn clean install -PautoInstallSinglePackage -Pclassic
+
+## Content Reset
+
+By design the **start** and **solution** branches will reset any content and configurations on the target AEM environment. This is not standard for a real-world implementation. Review the `ui.content/filter.xml` file and the various [modes](https://jackrabbit.apache.org/filevault/importmode.html#Modes) that can be set.
+
+## Tutorial Chapters
 
 The tutorial where you can learn how to implement a website using the latest standards and technologies in Adobe Experience Manager (AEM):
 
@@ -41,15 +47,19 @@ The tutorial where you can learn how to implement a website using the latest sta
 
 Navigate into the project folder for the desired chapter and version:
 
-    cd /02-component-basics/cloud/start
+    cd /02-component-basics/start
 
 To build all the modules run in the project root directory the following command with Maven 3:
 
     mvn clean install
 
-To build all the modules and deploy the `all` package to a local instance of AEM, run in the project root directory the following command:
+To build all the modules and deploy the `all` package to a local instance of AEM (Cloud Service), run in the project root directory the following command:
 
     mvn clean install -PautoInstallSinglePackage
+
+To build all the modules and deploy the `all` package to a local instance of AEM **6.5/6.4**, run in the project root directory the following command:
+
+    mvn clean install -PautoInstallSinglePackage -Pclassic
 
 Or to deploy it to a publish instance, run
 
