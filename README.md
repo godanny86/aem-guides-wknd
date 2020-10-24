@@ -1,18 +1,14 @@
 # WKND Sites Project - Tutorial Branch
 
-You are on the Tutorial branch for the WKND Site. This branch contains chapter starter and solution code for the various chapters of the tutorial. The tutorial branch is organized based on the chapter with starting projects for AEM as a Cloud Service (`cloud`) and a project that is compatible with AEM 6.5/6.4 (`classic`)
+You are on the Tutorial branch for the WKND Site. This branch contains chapter starter and solution code for the various chapters of the tutorial.
 
 ```
 | 02-component-basics
     |-- start
     |-- solution
 | 03-pages-templates
-    |-- cloud
-        |-- start
-        |-- solution
-    |-- classic
-        |-- start
-        |-- solution
+    |-- start
+    |-- solution
 | 04-front-end-workflow
 | 05-style-system
 | 06-custom-component
