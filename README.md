@@ -1,8 +1,31 @@
-# WKND Sites Project
+# WKND Sites Project - Tutorial Branch
 
-This is the code for the WKND Reference site: [https://www.wknd.site/](https://www.wknd.site/)
+You are on the Tutorial branch for the WKND Site. This branch contains chapter starter and solution code for the various chapters of the tutorial. The tutorial branch is organized based on the chapter with starting projects for AEM as a Cloud Service (`cloud`) and a project that is compatible with AEM 6.5/6.4 (`6.x.x`)
 
-There is also a corresponding tutorial where you can learn how to implement a website using the latest standards and technologies in Adobe Experience Manager (AEM): 
+```
+| component-basics
+    |-- cloud
+        |-- start
+        |-- solution
+    |-- 6.x.x
+        |-- start
+        |-- solution
+| pages-templates
+    |-- cloud
+        |-- start
+        |-- solution
+    |-- 6.x.x
+        |-- start
+        |-- solution
+| front-end-workflow
+| style-system
+| custom-component
+| unit-testing
+```
+
+> By design the **start** and **solution** branches will reset any content and configurations on the target AEM environment. This is not standard for a real-world implementation. Review the `ui.content/filter.xml` file and the various [modes](https://jackrabbit.apache.org/filevault/importmode.html#Modes) that can be set.
+
+The tutorial where you can learn how to implement a website using the latest standards and technologies in Adobe Experience Manager (AEM):
 
 1. [WKND Tutorial Overview](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 2. [Project Setup](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/project-setup.html)
@@ -13,21 +36,12 @@ There is also a corresponding tutorial where you can learn how to implement a we
 7. [Custom Component](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/custom-component.html)
 8. [Unit Testing](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/unit-testing.html)
 
-## Modules
-
-The main parts of the project are:
-
-* **core**: Java bundle containing all core functionality like OSGi services, listeners or schedulers, as well as component-related Java code such as servlets or request filters.
-* **ui.apps**: contains the /apps (and /etc) parts of the project, ie JS & CSS clientlibs, components, templates, runmode specific configs as well as Hobbes-tests
-* **ui.content**: contains mutable content (not /apps) that is integral to the running of the WKND site. This include template types, templates, policies and base-line organization page and asset structures.
-* **ui.content.sample**: WKND is often used as a pre-built reference site for demos and training; making it useful to have a full sample site with content and assets. HOWEVER the storage of authored content (pages, assets) in git is rare and not recommended for real-world implementations.
-* **ui.tests**: Java bundle containing JUnit tests that are executed server-side. This bundle is not to be deployed onto production.
-* **ui.launcher**: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
-* **dispatcher**: contains dispatcher configurations for AEM as a Cloud Service
-* **repository-structure**:  Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
-* **all**: An empty module that embeds the above sub-modules and any vendor dependencies into a single deployable package.
 
 ## How to build
+
+Navigate into the project folder for the desired chapter and version:
+
+    cd /component-basics/cloud/start
 
 To build all the modules run in the project root directory the following command with Maven 3:
 
