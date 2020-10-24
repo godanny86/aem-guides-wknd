@@ -1,26 +1,26 @@
 # WKND Sites Project - Tutorial Branch
 
-You are on the Tutorial branch for the WKND Site. This branch contains chapter starter and solution code for the various chapters of the tutorial. The tutorial branch is organized based on the chapter with starting projects for AEM as a Cloud Service (`cloud`) and a project that is compatible with AEM 6.5/6.4 (`6.x.x`)
+You are on the Tutorial branch for the WKND Site. This branch contains chapter starter and solution code for the various chapters of the tutorial. The tutorial branch is organized based on the chapter with starting projects for AEM as a Cloud Service (`cloud`) and a project that is compatible with AEM 6.5/6.4 (`classic`)
 
 ```
-| component-basics
+| 02-component-basics
     |-- cloud
         |-- start
         |-- solution
-    |-- 6.x.x
+    |-- classic
         |-- start
         |-- solution
-| pages-templates
+| 03-pages-templates
     |-- cloud
         |-- start
         |-- solution
-    |-- 6.x.x
+    |-- classic
         |-- start
         |-- solution
-| front-end-workflow
-| style-system
-| custom-component
-| unit-testing
+| 04-front-end-workflow
+| 05-style-system
+| 06-custom-component
+| 07-unit-testing
 ```
 
 > By design the **start** and **solution** branches will reset any content and configurations on the target AEM environment. This is not standard for a real-world implementation. Review the `ui.content/filter.xml` file and the various [modes](https://jackrabbit.apache.org/filevault/importmode.html#Modes) that can be set.
@@ -41,7 +41,7 @@ The tutorial where you can learn how to implement a website using the latest sta
 
 Navigate into the project folder for the desired chapter and version:
 
-    cd /component-basics/cloud/start
+    cd /02-component-basics/cloud/start
 
 To build all the modules run in the project root directory the following command with Maven 3:
 
